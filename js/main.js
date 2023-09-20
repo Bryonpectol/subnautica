@@ -29,7 +29,7 @@ function Hamburger() {
 
     theDiv.className = "theDiv";
 
-    theDiv.textContent = "00 Lifestyle"
+    theDiv.textContent = "Subnautica Companion"
     Home.textContent = "Home";
     Videos.textContent = "Crafting";
     Gallery.textContent = "Creatures";
@@ -76,7 +76,7 @@ function exit() {
 
     theDiv.className = "theDiv";
 
-    theDiv.textContent = "00 Lifestyle"
+    theDiv.textContent = "Subnautica Companion"
     Home.textContent = "Home";
     Videos.textContent = "Characters";
     Gallery.textContent = "Movies";
