@@ -5,6 +5,7 @@ let Home;
 let Videos;
 let Gallery;
 let Beauty;
+let Map;
 
 let iconImg;
 
@@ -24,30 +25,35 @@ function Hamburger() {
     Videos = document.createElement("a");
     Gallery = document.createElement("a");
     Beauty = document.createElement("a");
+    Map = document.createElement("a");
 
     theDiv.className = "theDiv";
 
     theDiv.textContent = "00 Lifestyle"
     Home.textContent = "Home";
-    Videos.textContent = "Characters";
-    Gallery.textContent = "Movies";
-    Beauty.textContent = "Books";
+    Videos.textContent = "Crafting";
+    Gallery.textContent = "Creatures";
+    Beauty.textContent = "Vehicles";
+    Map.textContent = "Map";
 
     // theDiv.className="mobilelinks";
     Videos.className="mobilelinks";
     Gallery.className="mobilelinks";
     Beauty.className="mobilelinks";
+    Map.className="mobilelinks";
 
     theDiv.setAttribute("href", "/index.html");
     Videos.setAttribute("href", "/html/characters.html");
     Gallery.setAttribute("href", "/html/movies.html");
     Beauty.setAttribute("href", "/html/books.html");
+    Map.setAttribute("href", "/html/map.html");
 
 
     nav.appendChild(theDiv);
     nav.appendChild(Videos);
     nav.appendChild(Gallery);
     nav.appendChild(Beauty);
+    nav.appendChild(Map);
 
     hamBTN.setAttribute("onclick", "exit()");
 
@@ -75,11 +81,13 @@ function exit() {
     Videos.textContent = "Characters";
     Gallery.textContent = "Movies";
     Beauty.textContent = "Books";
+    Map.textContent = "Map";
 
     nav.removeChild(theDiv);
     nav.removeChild(Videos);
     nav.removeChild(Gallery);
     nav.removeChild(Beauty);
+    nav.removeChild(Map);
 
     hamBTN.setAttribute("onclick", "Hamburger()");
 
